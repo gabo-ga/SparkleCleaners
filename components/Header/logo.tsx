@@ -1,5 +1,5 @@
 'use client';
-import LogoImage from '../public/Logo.svg';
+import LogoImage from '../../public/Logo.svg';
 import Image from 'next/image';
 
 export default function Logo() {
