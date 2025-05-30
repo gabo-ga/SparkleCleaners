@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image';
+import BookNowButton from '../booknowButton';
 
 export default function Hero() {
     return (
@@ -9,14 +10,14 @@ export default function Hero() {
                 alt="Sparkle Cleaners Background"
                 fill
                 priority
-                className="object-cover filter brightness-100 opacity-60"
+                className="object-contain object-top filter brightness-100 opacity-60 lg:object-cover"
             />
-            <div className="absolute flex flex-col items-center justify-center text-black p-4">
-                <h1 className="text-xl lg:text-6xl font-bold mb-4">EXPERT CLEANING AT YOUR DOORSTEP</h1>
-                <p className="text-lg lg:text-xl mb-8">Your trusted partner for all your cleaning needs.</p>
-                <a href="#services" className="px-6 py-3 bg-[#FF0F0FC9] text-white rounded-lg hover:bg-[#ff0f0f] transition-colors duration-300">
-                    Explore Our Services
-                </a>
+            <div className="absolute flex flex-col items-center justify-center text-black p-7 pr-34 sm:p-10 sm:pr-38 sm:pt-14">
+                <h1 className="text-xl sm:text-4xl lg:text-6xl font-bold mb-4">EXPERT CLEANING AT YOUR DOORSTEP</h1>
+                <p className="text-xs sm:text-xl mb-6">Hi! we are a professional cleaning company offering personalized cleaning services</p>
+                <div className='flex items-start justify-start w-full'>
+                <BookNowButton/>
+                </div>
             </div>
         </div>
     );
