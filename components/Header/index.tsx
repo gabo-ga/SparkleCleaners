@@ -7,8 +7,8 @@ import { Menu } from "lucide-react";
 
 export default function Header() {
     return (
-        <header className="flex items-center justify-between px-3 py-2 bg-white shadow-md">
-            <div className="flex items-center gap-2 lg:gap-76">
+        <header className="flex items-center justify-between px-3 py-2 bg-white shadow-lg">
+            <div className="flex items-center gap-2 lg:justify-between lg:w-screen lg:pr-6">
                 <Sheet>
                     <SheetTrigger asChild>
                         <button className="lg:hidden">
@@ -36,7 +36,9 @@ export default function Header() {
                     </a>
                 </nav>
             </div>
+            <div className='lg:w-42'>
             <BookNowButton />
+            </div>
         </header>
     );
 }
