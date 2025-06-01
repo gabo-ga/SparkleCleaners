@@ -27,13 +27,13 @@ export default function Contact() {
                         <button
                             onClick={handleWhatsappClick}
                             className="w-7 h-7 bg-contain bg-no-repeat bg-center"
-                            style={{ backgroundImage: "url('/whatsapp_logo.png')" }}
+                            style={{ backgroundImage: "url('/whatsapp_logo.webp')" }}
                             aria-label="Contact via WhatsApp"
                         />
                         <button
                             onClick={handleImessageClick}
                             className="w-7 h-7 bg-contain bg-no-repeat bg-center"
-                            style={{ backgroundImage: "url('/messages_logo.jpeg')" }}
+                            style={{ backgroundImage: "url('/messages_logo.webp')" }}
                             aria-label="Contact via iMessage"
                         />
                     </div>

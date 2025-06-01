@@ -19,21 +19,21 @@ const services: Service[] = [
     },
     {
         id: 2,
-        title: "Regular Maintenance",
-        description: "Weekly or bi-weekly cleaning services to keep your space consistently clean and organized.",
-        imageUrl: "/maintenance.jpg"
+        title: "Apartment Services",
+        description: "Enjoy a fresh, clean apartment without lifting a finger",
+        imageUrl: "/apartments.webp"
     },
     {
         id: 3,
-        title: "Move In/Out Cleaning",
-        description: "Comprehensive cleaning service for moving transitions, ensuring spaces are perfectly clean for new occupants.",
-        imageUrl: "/move-in-out.jpg"
+        title: "Office Services",
+        description: "Boost productivity with a clean and organized workspace.",
+        imageUrl: "/offices.webp"
     },
     {
         id: 4,
-        title: "Office Cleaning",
-        description: "Professional cleaning services tailored for commercial spaces and offices.",
-        imageUrl: "/office-cleaning.jpg"
+        title: "Post Construction",
+        description: "Turn the mess into a masterpiece with our post-construction cleaning.",
+        imageUrl: "/postconstruction.webp"
     }
 ];
 
