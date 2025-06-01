@@ -4,11 +4,12 @@ import BookNowButton from '../booknowButton';
 import Reviews from '../reviews';
 import Services from '../services';
 import Contact from '../contact';
+import Benefits from './benefits';
 
 export default function Hero() {
     return (
         <>
-            <section className="relative w-full h-74 overflow-hidden">
+            <section className="relative w-full h-64  sm:h-108 overflow-hidden">
                 <Image
                     src="/background.webp"
                     alt="Sparkle Cleaners Background"
@@ -25,28 +26,8 @@ export default function Hero() {
                 </div>
             </section>
 
-            <section className="container mx-auto px-4">
-                <div className="grid grid-cols-2 gap-4">
-                    {/* Grid Item 1 */}
-                    <div className="bg-white p-2">
-                        <h3 className="text-lg font-bold mb-4">Certified Deep Cleaning</h3>
-                    </div>
-                    {/* Grid Item 2 */}
-                    <div className="bg-white p-2">
-                        <h3 className="text-lg font-bold mb-4">Quick Online Booking</h3>
-                    </div>
+            <Benefits/>
 
-                    {/* Grid Item 3 */}
-                    <div className="bg-white p-2">
-                        <h3 className="text-lg font-bold mb-4">Safe Booking System</h3>
-                    </div>
-
-                    {/* Grid Item 4 */}
-                    <div className="bg-white p-2">
-                        <h3 className="text-lg font-bold mb-4">Trustworthy Professionals</h3>
-                    </div>
-                </div>
-            </section>
 
             <Reviews/>
 

@@ -51,9 +51,9 @@ export default function Reviews() {
     };
 
     return (
-        <section className="bg-gray-50 py-16">
+        <section className="bg-white py-8">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-12">Our Reviews</h2>
+                <h2 className="text-2xl font-bold text-center mb-8">OUR REVIEWS</h2>
                 
                 <div className="relative max-w-3xl mx-auto">
                     {/* Navigation Buttons */}
@@ -76,7 +76,6 @@ export default function Reviews() {
                         </p>
                         <div className="flex justify-between items-center">
                             <p className="font-semibold">{reviews[currentIndex].name}</p>
-                            <p className="text-gray-500 text-sm">{reviews[currentIndex].date}</p>
                         </div>
                     </div>
 

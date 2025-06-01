@@ -13,9 +13,9 @@ interface Service {
 const services: Service[] = [
     {
         id: 1,
-        title: "Deep Cleaning",
-        description: "Thorough cleaning of all surfaces, including hard-to-reach areas and detailed attention to bathrooms and kitchens.",
-        imageUrl: "/deep-cleaning.jpg"
+        title: "House Services",
+        description: "Keep your home spotless and stress-free.",
+        imageUrl: "/houses.webp"
     },
     {
         id: 2,
@@ -53,39 +53,38 @@ export default function Services() {
     };
 
     return (
-        <section className="bg-white py-16">
-            <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
-                
+        <section className="bg-white py-4 sm:py-6">
+            <div className="container mx-auto px-2 sm:px-3">
+                <h2 className="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">OUR SERVICES</h2>
                 <div className="relative max-w-6xl mx-auto">
                     {/* Navigation Buttons */}
                     <button 
                         onClick={prevService}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 bg-white rounded-full shadow-lg hover:bg-gray-50"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-1 sm:p-2 bg-white rounded-full shadow-lg hover:bg-gray-50"
                     >
-                        <ChevronLeft className="h-6 w-6" />
+                        <ChevronLeft className="h-4 w-4 sm:h-6 sm:w-6" />
                     </button>
 
                     {/* Services Cards */}
-                    <div className="flex overflow-hidden mx-12">
+                    <div className="flex overflow-hidden mx-6 sm:mx-12">
                         <div className="flex transition-transform duration-500 ease-in-out"
                              style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                             {services.map((service) => (
                                 <div
                                     key={service.id}
-                                    className="w-full min-w-full p-4"
+                                    className="w-18 min-w-full p-2 sm:p-4"
                                 >
-                                    <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                                        <div className="relative h-64">
+                                    <div className="bg-white rounded-lg sm:rounded-xl shadow-md sm:shadow-lg overflow-hidden">
+                                        <div className="relative h-40 sm:h-64">
                                             <img
                                                 src={service.imageUrl}
                                                 alt={service.title}
                                                 className="object-cover w-full h-full"
                                             />
                                         </div>
-                                        <div className="p-6">
-                                            <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
-                                            <p className="text-gray-600">{service.description}</p>
+                                        <div className="p-3 sm:p-6">
+                                            <h3 className="text-lg sm:text-2xl font-semibold mb-2 sm:mb-4">{service.title}</h3>
+                                            <p className="text-sm sm:text-base text-gray-600">{service.description}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -95,18 +94,18 @@ export default function Services() {
 
                     <button 
                         onClick={nextService}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 bg-white rounded-full shadow-lg hover:bg-gray-50"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-1 sm:p-2 bg-white rounded-full shadow-lg hover:bg-gray-50"
                     >
-                        <ChevronRight className="h-6 w-6" />
+                        <ChevronRight className="h-4 w-4 sm:h-6 sm:w-6" />
                     </button>
                 </div>
 
                 {/* Dots Indicator */}
-                <div className="flex justify-center gap-2 mt-8">
+                <div className="flex justify-center gap-1 sm:gap-2 mt-4 sm:mt-8">
                     {services.map((_, index) => (
                         <button
                             key={index}
-                            className={`h-2 w-2 rounded-full transition-colors duration-300 ${
+                            className={`h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full transition-colors duration-300 ${
                                 index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'
                             }`}
                             onClick={() => setCurrentIndex(index)}
