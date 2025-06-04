@@ -9,13 +9,15 @@ import Benefits from './benefits';
 export default function Hero() {
     return (
         <>
-            <section className="relative w-full h-64  sm:h-108 overflow-hidden">
+            <section className="relative w-full h-[50vh]  sm:h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
                 <Image
                     src="/background.webp"
                     alt="Sparkle Cleaners Background"
                     fill
                     priority
-                    className="object-contain object-top filter brightness-100 opacity-60 lg:object-cover"
+                    sizes="100vw"
+                    quality={100}
+                    className="object-cover object-top filter brightness-100 opacity-60 lg:object-cover"
                 />
                 <div className="absolute flex flex-col items-center justify-center text-black p-7 pr-34 sm:p-10 sm:pr-38 sm:pt-14">
                     <h1 className="text-xl sm:text-4xl lg:text-6xl font-bold mb-4">EXPERT CLEANING AT YOUR DOORSTEP</h1>

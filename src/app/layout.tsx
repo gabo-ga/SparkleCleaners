@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
+import Footer from "../../components/Footer";
 
 
 const PoppinsSans = Poppins({
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <Header/>
         <Hero/>
+        <Footer/>
         {children}
       </body>
     </html>
