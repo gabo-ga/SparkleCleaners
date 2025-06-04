@@ -19,7 +19,7 @@ export default function Hero() {
                     quality={100}
                     className="object-cover object-top filter brightness-100 opacity-60 lg:object-cover"
                 />
-                <div className="absolute flex flex-col items-center justify-center text-black p-7 pr-34 sm:p-10 sm:pr-38 sm:pt-14">
+                <div className="absolute flex flex-col items-center justify-center text-black p-7 pr-34 sm:p-10 sm:pr-38 sm:pt-14 md:pr-64">
                     <h1 className="text-xl sm:text-4xl lg:text-6xl font-bold mb-4">EXPERT CLEANING AT YOUR DOORSTEP</h1>
                     <p className="text-xs sm:text-xl mb-6">Hi! we are a professional cleaning company offering personalized cleaning services</p>
                     <div className='flex items-start justify-start w-full'>

@@ -66,13 +66,13 @@ export default function Services() {
                     </button>
 
                     {/* Services Cards */}
-                    <div className="flex overflow-hidden mx-6 sm:mx-12">
+                    <div className="flex overflow-hidden mx-6 sm:mx-12 md:mx-12">
                         <div className="flex transition-transform duration-500 ease-in-out"
                              style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                             {services.map((service) => (
                                 <div
                                     key={service.id}
-                                    className="w-18 min-w-full p-2 sm:p-4"
+                                    className="w-18 min-w-full p-2 sm:p-4 md:w-24"
                                 >
                                     <div className="bg-white rounded-lg sm:rounded-xl shadow-md sm:shadow-lg overflow-hidden">
                                         <div className="relative h-40 sm:h-64">
