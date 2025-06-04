@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Logo from '@/public/Logo.svg';
 
 export default function Footer() {
     return (
@@ -10,7 +9,7 @@ export default function Footer() {
                 <div className="flex flex-row items-center gap-2 text-white text-md">
                     <div className="relative h-8 w-5 md:h-10 md:w-8">
                         <Image 
-                            src={Logo}
+                            src="/Logo.svg"
                             alt="Sparkle Cleaners Logo"
                             fill
                             className="object-contain"
