@@ -16,7 +16,7 @@ export default function Header() {
                         </button>
                     </SheetTrigger>
                     <SheetContent side="left" className="w-[300px]">
-                        <nav className="flex flex-col gap-4">
+                        <nav className="flex flex-col my-10 gap-3 mx-6">
                             <a href="#" className="text-lg font-medium">Home</a>
                             <a href="#" className="text-lg font-medium">Services</a>
                             <a href="#" className="text-lg font-medium">About Us</a>

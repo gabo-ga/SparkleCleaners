@@ -9,7 +9,7 @@ import Benefits from './benefits';
 export default function Hero() {
     return (
         <>
-            <section className="relative w-full h-[50vh]  sm:h-[60vh] md:h-[70vh] lg:h-[70vh] overflow-hidden">
+            <section className="relative w-full h-[40vh]  sm:h-[60vh] md:h-[70vh] lg:h-[70vh] overflow-hidden">
                 <Image
                     src="/background.webp"
                     alt="Sparkle Cleaners Background"
