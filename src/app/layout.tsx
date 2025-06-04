@@ -15,7 +15,7 @@ const PoppinsSans = Poppins({
 
 export const metadata: Metadata = {
   title: "Sparkle Cleaners NYC",
-  description: "Top-tier cleaning company",
+  description: "Professional cleaning services in NYC",
 };
 
 export default function RootLayout({
@@ -29,9 +29,10 @@ export default function RootLayout({
         className={`${PoppinsSans.variable} antialiased`}
       >
         <Header/>
-        <Hero/>
-        <Footer/>
+        <main>
         {children}
+        </main>
+        <Footer/>
       </body>
     </html>
   );
