@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 interface Service {
     id: number;
@@ -76,10 +77,13 @@ export default function Services() {
                                 >
                                     <div className="bg-white rounded-lg sm:rounded-xl shadow-md sm:shadow-lg overflow-hidden">
                                         <div className="relative h-40 sm:h-64">
-                                            <img
+                                            <Image
                                                 src={service.imageUrl}
                                                 alt={service.title}
-                                                className="object-cover w-full h-full"
+                                                fill
+                                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 60vw"
+                                                className="object-cover"
+                                                priority={service.id === 1}
                                             />
                                         </div>
                                         <div className="p-3 sm:p-6">
