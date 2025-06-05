@@ -1,13 +1,8 @@
-'use client';
+
+import IMessageButton from "../iMessageButton";
+import WppButton from "../wppButton";
 
 export default function Contact() {
-    const handleWhatsappClick = () => {
-        window.location.href = "https://wa.link/dmv3hy";
-    };
-  
-    const handleImessageClick = () => {
-        window.location.href = "sms:+19293770976";
-    };
   
     return (
         <div className="flex flex-row w-full items-center md:justify-center gap-10 py-3">
@@ -24,18 +19,8 @@ export default function Contact() {
                     </p>
                     <div className="flex flex-row items-start gap-3 text-xl font-semibold text-[#aae858] font-Poppins lg:text-2xl">
                         <h3>Send us a message!</h3>
-                        <button
-                            onClick={handleWhatsappClick}
-                            className="w-7 h-7 bg-contain bg-no-repeat bg-center"
-                            style={{ backgroundImage: "url('/whatsapp_logo.webp')" }}
-                            aria-label="Contact via WhatsApp"
-                        />
-                        <button
-                            onClick={handleImessageClick}
-                            className="w-7 h-7 bg-contain bg-no-repeat bg-center"
-                            style={{ backgroundImage: "url('/messages_logo.webp')" }}
-                            aria-label="Contact via iMessage"
-                        />
+                        <WppButton/>
+                       <IMessageButton/>
                     </div>
                 </div>
             </article>

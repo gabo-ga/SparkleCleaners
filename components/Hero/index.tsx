@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import BookNowButton from '../booknowButton';
-import Reviews from '../reviews';
-import Services from '../services';
-import Contact from '../contact';
+import Reviews from './reviews';
+import Services from './services';
+import Contact from './contact';
 import Benefits from './benefits';
 
 export default function Hero() {
