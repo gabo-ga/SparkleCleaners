@@ -26,14 +26,9 @@ export default function Hero() {
                     </div>
                 </div>
             </section>
-
             <Benefits/>
-
-
             <Reviews/>
-
             <Services/>
-
             <Contact/>
         </>
     );
