@@ -1,5 +1,3 @@
-"use client";
-
 import Logo from './logo';
 import BookNowButton from '../booknowButton';
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";

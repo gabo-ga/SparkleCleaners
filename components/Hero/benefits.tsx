@@ -1,5 +1,3 @@
-'use client';
-
 export default function Benefits() {
     return (
         <section className="container mx-auto p-4">

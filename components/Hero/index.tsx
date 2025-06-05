@@ -1,4 +1,3 @@
-"use client"
 import Image from 'next/image';
 import BookNowButton from '../booknowButton';
 import Reviews from '../reviews';

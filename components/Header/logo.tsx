@@ -1,4 +1,3 @@
-'use client';
 import LogoImage from '../../public/Logo.svg';
 import Image from 'next/image';
 
