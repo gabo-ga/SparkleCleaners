@@ -1,7 +1,8 @@
 import Logo from './logo';
 import BookNowButton from '../booknowButton';
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import Link from 'next/link';
 
 export default function Header() {
     return (
@@ -14,24 +15,27 @@ export default function Header() {
                         </button>
                     </SheetTrigger>
                     <SheetContent side="left" className="w-[300px]">
-                        <nav className="flex flex-col my-10 gap-3 mx-6">
-                            <a href="#" className="text-lg font-medium">Home</a>
-                            <a href="#" className="text-lg font-medium">Services</a>
-                            <a href="#" className="text-lg font-medium">About Us</a>
+                        <SheetTitle className="text-lg font-bold mx-6 mt-6">
+                            Menu
+                        </SheetTitle>
+                        <nav className="flex flex-col my-1 gap-3 mx-6">
+                            <Link href="/" className="text-lg font-medium">Home</Link>
+                            <Link href="/services" className="text-lg font-medium">Services</Link>
+                            <Link href="/about" className="text-lg font-medium">About Us</Link>
                         </nav>
                     </SheetContent>
                 </Sheet>
                 <Logo />
                 <nav className="hidden lg:flex items-center gap-8 ml-8">
-                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+                    <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
                         Home
-                    </a>
-                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+                    </Link>
+                    <Link href="/services" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
                         Services
-                    </a>
-                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+                    </Link>
+                    <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
                         About Us
-                    </a>
+                    </Link>
                 </nav>
             </div>
             <div className='lg:w-42'>
