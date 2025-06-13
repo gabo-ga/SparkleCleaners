@@ -10,5 +10,7 @@ export interface Service {
     id: number;
     title: string;
     description: string;
-    imageUrl: string;
+    features?: string[];
+    options?: string[];
+    imageUrl?: string;
 }
