@@ -7,7 +7,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative h-[40vh] w-full">
         <Image
-          src="/about-banner.webp"
+          src="/crew.webp"
           alt="Our Cleaning Team"
           fill
           priority
@@ -29,9 +29,8 @@ export default function About() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-lg text-gray-600 mb-8">
-              At Sparkle Cleaners, we're committed to delivering exceptional cleaning services 
-              that transform spaces and enhance lives. Our dedication to quality, attention to 
-              detail, and customer satisfaction sets us apart in the industry.
+            To provide high-quality, reliable, and compassionate cleaning services that create safe, healthy, 
+            and welcoming spaces for homes and businesses across New York City - with the dedication and heart of a company built from resilience
             </p>
           </div>
         </div>
@@ -80,7 +79,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-blue-950 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Experience the Difference?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
