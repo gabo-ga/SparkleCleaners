@@ -50,7 +50,10 @@ export default function ServicesPage() {
                 <p className="text-gray-600 mb-6">
                   {service.description}
                 </p>
-                <div className="space-y-3 mb-8">
+                
+                {/* Features Section */}
+                <div className="space-y-3 mb-6">
+                  <h4 className="text-lg font-semibold text-gray-700">Features:</h4>
                   {service.features.map((feature) => (
                     <div key={feature} className="flex items-center gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
@@ -58,14 +61,28 @@ export default function ServicesPage() {
                     </div>
                   ))}
                 </div>
+
+                {/* Options Section */}
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-700 mb-3">Available Options:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {service.options.map((option) => (
+                      <span 
+                        key={option}
+                        className="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-sm font-medium"
+                      >
+                        {option}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
                 <div className="flex justify-end">
-                  <BookNowButton />
+                  <BookNowButton variant='quote' />
                 </div>
               </div>
             ))}
           </div>
-
-          
         </div>
       </section>
 
