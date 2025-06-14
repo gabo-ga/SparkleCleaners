@@ -14,3 +14,11 @@ export interface Service {
     options?: string[];
     imageUrl?: string;
 }
+
+
+type FormData = {
+    name: string;
+    telephone: string;
+    email: string;
+    request: string;
+}
