@@ -1,9 +1,10 @@
 import LogoImage from '../../public/Logo.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Logo() {
     return (
-        <div className="flex items-center">
+        <Link href="/" className="flex items-center">
             <Image 
                 src={LogoImage}
                 alt="Sparkle Cleaners Logo"
@@ -14,6 +15,6 @@ export default function Logo() {
             <h1 className="text-base lg:text-xl font-bold text-black">
                 Sparkle Cleaners NYC
             </h1>
-        </div>
+        </Link>
     );
 }

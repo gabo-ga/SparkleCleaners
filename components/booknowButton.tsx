@@ -1,5 +1,7 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+
 interface BookNowButtonProps {
     onClick?: () => void;
     className?: string;
@@ -13,6 +15,8 @@ export default function BookNowButton({
     variant = 'book',
     text
 }: BookNowButtonProps) {
+    const router = useRouter();
+
     const buttonColors = {
         book: '#FF0F0FC9',
         quote: '#93CF30'
@@ -23,9 +27,16 @@ export default function BookNowButton({
         quote: '#84bb2b'
     };
 
+    const handleClick = () => {
+        if (onClick) {
+            onClick();
+        }
+        router.push('/contact');
+    };
+
     return (
         <button
-            onClick={onClick}
+            onClick={handleClick}
             className={`
                 px-4 lg:px-5 
                 py-2 lg:py-2 
