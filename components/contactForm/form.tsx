@@ -10,13 +10,31 @@ export const ContactForm = () => {
 
 
     const onSubmit = async (data: FormData) => {
-        try {
-          console.log(data);
-          reset();
-        } catch (error) {
-          console.error('Error submitting form:', error);
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            telephone: data.telephone,
+            messageContent: data.request,
+          }),
+        });
+    
+        if (!res.ok) {
+          throw new Error('Failed to submit form');
         }
-      };
+    
+        const saved = await res.json();
+        console.log('Saved:', saved);
+    
+        reset();
+      } catch (error) {
+        console.error('Error submitting form:', error);
+      }
+    };
+    
     
 
     return(
@@ -99,7 +117,6 @@ export const ContactForm = () => {
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
           </form>
-          <DevTool control={control}/>
           </div>
           </>
     );
