@@ -1,12 +1,14 @@
 "use client";
 import { useForm } from 'react-hook-form';
-import { DevTool } from '@hookform/devtools';
+import { SuccessMessage } from '../sucessComponent';
+import { useState } from 'react';
 import type { FormData } from '../../types';
 
 export const ContactForm = () => {
     const form = useForm<FormData>();
     const { register, control, handleSubmit, formState, reset } = form;
     const { errors, isSubmitting } = formState;
+    const [showSuccess, setShowSuccess] = useState(false);
 
 
     const onSubmit = async (data: FormData) => {
@@ -27,7 +29,7 @@ export const ContactForm = () => {
         }
     
         const saved = await res.json();
-        console.log('Saved:', saved);
+        setShowSuccess(true);
     
         reset();
       } catch (error) {
@@ -118,6 +120,10 @@ export const ContactForm = () => {
             </button>
           </form>
           </div>
+
+          {showSuccess && (
+            <SuccessMessage onClose={() => setShowSuccess(false)} />
+          )}
           </>
     );
 };
