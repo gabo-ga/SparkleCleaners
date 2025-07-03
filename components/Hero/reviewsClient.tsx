@@ -39,7 +39,7 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
                     ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic">
-                    "{reviews[currentIndex].comment}"
+                    `{reviews[currentIndex].comment}`
                 </p>
                 <div className="flex justify-between items-center">
                     <p className="font-semibold">{reviews[currentIndex].name}</p>

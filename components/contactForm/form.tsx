@@ -6,7 +6,7 @@ import type { FormData } from '../../types';
 
 export const ContactForm = () => {
     const form = useForm<FormData>();
-    const { register, control, handleSubmit, formState, reset } = form;
+    const { register, handleSubmit, formState, reset } = form;
     const { errors, isSubmitting } = formState;
     const [showSuccess, setShowSuccess] = useState(false);
 
@@ -27,8 +27,6 @@ export const ContactForm = () => {
         if (!res.ok) {
           throw new Error('Failed to submit form');
         }
-    
-        const saved = await res.json();
         setShowSuccess(true);
     
         reset();
