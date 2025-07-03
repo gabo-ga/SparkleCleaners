@@ -46,7 +46,7 @@ export default function ServiceCarousel({ services }: ServiceCarouselProps) {
                             <div className="bg-white rounded-lg sm:rounded-xl shadow-md sm:shadow-lg overflow-hidden">
                                 <div className="relative h-40 sm:h-64">
                                     <Image
-                                        src={service.imageUrl}
+                                        src={service.imageUrl || '/placeholder-image.jpg'}
                                         alt={service.title}
                                         fill
                                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 60vw"
