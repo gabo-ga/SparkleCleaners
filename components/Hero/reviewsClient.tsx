@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
-import type { Review } from '../../../sparkle-cleaners/types';
+import type { Review } from '../../types';
 
 interface ReviewCarouselProps {
     reviews: Review[];
