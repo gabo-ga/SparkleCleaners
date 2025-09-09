@@ -16,7 +16,7 @@ export interface Service {
 }
 
 
-type FormData = {
+export type FormData = {
     name: string;
     telephone: string;
     email: string;
