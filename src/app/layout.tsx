@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const PoppinsSans = Poppins({
@@ -31,7 +32,8 @@ export default async function RootLayout({
         <Header/>
         <main>
         {children}
-        <Analytics />
+        <Analytics /> {/*vercel analytics*/}
+        <SpeedInsights /> {/*vercel speed insights*/}
         </main>
         <Footer/>
       </body>
