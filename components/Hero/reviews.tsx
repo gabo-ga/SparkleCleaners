@@ -31,7 +31,13 @@ export default function Reviews() {
     return (
         <section className="bg-white py-8">
             <div className="container mx-auto px-4">
-                <h2 className="text-2xl font-bold text-center mb-8">OUR REVIEWS</h2>
+                <p className="text-center text-sm md:text-base lg:text-lg text-gray-700">
+                    Trusted by hundreds of New Yorkers for our professional, reliable cleaning service.
+                </p>
+                <p className="text-center text-sm md:text-base lg:text-lg text-gray-700 mb-4">
+                    See what our clients are saying about Sparkle Cleaners NYC.
+                </p>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8">OUR REVIEWS</h2>
                 <ReviewCarousel reviews={reviews} />
             </div>
         </section>

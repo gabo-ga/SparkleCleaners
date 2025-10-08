@@ -11,6 +11,12 @@ interface ReviewCarouselProps {
 export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    const currentReview = reviews[currentIndex];
+    const reviewMonthYear = new Date(currentReview.date).toLocaleDateString('en-US', {
+        month: 'long',
+        year: 'numeric',
+    });
+
     const nextReview = () => {
         setCurrentIndex((prevIndex) => 
             prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
@@ -34,15 +40,16 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
             
             <div className="bg-white p-8 rounded-lg shadow-lg mx-12 sm:mx-36">
                 <div className="flex gap-1 mb-4">
-                    {[...Array(reviews[currentIndex].rating)].map((_, i) => (
+                    {[...Array(currentReview.rating)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                     ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic">
-                    `{reviews[currentIndex].comment}`
+                    `{currentReview.comment}`
                 </p>
                 <div className="flex justify-between items-center">
-                    <p className="font-semibold">{reviews[currentIndex].name}</p>
+                    <p className="font-semibold">{currentReview.name}</p>
+                    <div className="text-sm text-gray-500">{reviewMonthYear}</div>
                 </div>
             </div>
 
