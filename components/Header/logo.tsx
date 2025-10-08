@@ -12,9 +12,9 @@ export default function Logo() {
                 height={34}
                 className="object-contain lg:w-14 lg:h-14"
             />
-            <h1 className="text-base lg:text-xl font-bold text-black">
+            <span className="text-base lg:text-xl font-bold text-black">
                 Sparkle Cleaners NYC
-            </h1>
+            </span>
         </Link>
     );
 }

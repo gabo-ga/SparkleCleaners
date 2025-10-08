@@ -11,9 +11,9 @@ const HeroBanner = () => {
                 className="object-cover brightness-50"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-                <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
+                <span className="text-4xl md:text-5xl font-bold text-center mb-4">
                     Professional Cleaning Services
-                </h1>
+                </span>
                 <p className="text-lg md:text-xl text-center max-w-2xl mx-auto px-4">
                     Expert cleaning solutions for every space
                 </p>

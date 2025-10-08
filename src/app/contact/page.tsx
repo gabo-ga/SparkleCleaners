@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-2xl mx-auto px-4">
         <div className="bg-white rounded-xl shadow-lg p-8">
-          <h1 className="text-3xl font-bold text-center mb-2">Contact Us</h1>
+          <span className="text-3xl font-bold text-center mb-2">Contact Us</span>
           <p className="text-gray-600 text-center mb-8">We would love to hear from you!</p>
 
           <ContactForm/>
