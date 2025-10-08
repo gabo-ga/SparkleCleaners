@@ -17,6 +17,11 @@ const PoppinsSans = Poppins({
 export const metadata: Metadata = {
   title: "Sparkle Cleaners NYC",
   description: "Professional cleaning services in NYC",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default async function RootLayout({
