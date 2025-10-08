@@ -8,22 +8,22 @@ const reviews: Review[] = [
         id: 1,
         name: "Sarah Thompson",
         rating: 5,
-        comment: "Excellent service! They made my apartment spotless. Highly recommend their deep cleaning service.",
-        date: "May 15, 2025"
+        comment: "Excellent service! They did an amazing job with my apartment -every corner was spotless and smelles fresh! Highly recommend their deep cleaning service.",
+        date: "May 15, 2024"
     },
     {
         id: 2,
         name: "Michael Chen",
         rating: 5,
-        comment: "Very professional team. They were on time and did a fantastic job with our office cleaning.",
-        date: "May 18, 2025"
+        comment: "The team arrived right on time and transformed our office space - everything looks fantastic  and organized. Their attention to detail is impressive.",
+        date: "April 18, 2025"
     },
     {
         id: 3,
         name: "Emily Rodriguez",
         rating: 5,
-        comment: "Best cleaning service in NYC! They pay attention to every detail.",
-        date: "May 20, 2025"
+        comment: "Honestly, best cleaning service in NYC! They noticed details I wouldn't have seen myself. Totally worth every penny.",
+        date: "June 20, 2025"
     }
 ] as const;
 

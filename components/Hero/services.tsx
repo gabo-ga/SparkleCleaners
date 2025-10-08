@@ -4,25 +4,25 @@ const services = [
     {
         id: 1,
         title: "House Services",
-        description: "Keep your home spotless and stress-free.",
+        description: "Experience the comfort of spotless home - from kitchens to living rooms, we make every corner shine.",
         imageUrl: "/houses.webp"
     },
     {
         id: 2,
         title: "Apartment Services",
-        description: "Enjoy a fresh, clean apartment without lifting a finger",
+        description: "Perfect for busy city living - our apartment cleaning keeps your space fresh and inviting.",
         imageUrl: "/apartments.webp"
     },
     {
         id: 3,
         title: "Office Services",
-        description: "Boost productivity with a clean and organized workspace.",
+        description: "Maintain a professional image and boost focus with spotless office your team will appreciate.",
         imageUrl: "/offices.webp"
     },
     {
         id: 4,
         title: "Post Construction",
-        description: "Turn the mess into a masterpiece with our post-construction cleaning.",
+        description: "From dust to dazzling — we handle the mess after renovation so you can move in stress-free.",
         imageUrl: "/postconstruction.webp"
     }
 ] as const;
@@ -34,6 +34,9 @@ export default function Services() {
                 <h2 className="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">
                     OUR SERVICES
                 </h2>
+                <p className="text-center text-sm sm:text-base text-gray-700 mb-6 sm:mb-8">
+                    Offering custom cleaning packages for homes, apartments, offices, and more.
+                </p>
                 <ServiceCarousel services={services.map(service => ({ ...service }))} />
             </div>
         </section>
