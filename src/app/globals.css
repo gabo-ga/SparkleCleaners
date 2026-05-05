@@ -3,6 +3,58 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* =================================================================
+   Sparkle Cleaners NYC — Design tokens
+   Source: design system bundle (colors_and_type.css)
+   ================================================================= */
+:root {
+  --brand-sky:  #BFDFF5;
+  --brand-sun:  #FCCB01;
+  --brand-lime: #AAE858;
+  --brand-navy: #1C4274;
+  --brand-blue: #27ABE2;
+  --brand-teal: #41ACD6;
+
+  --blue-50:  #FBFDFE;
+  --blue-100: #E9F3F7;
+  --blue-200: #D2E5EF;
+  --blue-500: #6EACCA;
+  --blue-700: #588AA2;
+  --blue-800: #538198;
+  --blue-900: #314D5B;
+
+  --green-50:  #F1FBE1;
+  --green-100: #E2F7C0;
+  --green-400: #A3E635;
+  --green-500: #93CF30;
+  --green-600: #82B82A;
+  --green-700: #7AAD28;
+  --green-800: #628A20;
+  --green-900: #496718;
+
+  --yellow-400: #FDD835;
+
+  --red-500: #EF4444;
+  --red-600: #D73D3D;
+
+  --neutral-200: #F2FAFD;
+  --neutral-300: #DAE1E4;
+  --neutral-700: #6D7072;
+
+  --action-primary:       var(--red-500);
+  --action-primary-hover: #FF0F0F;
+  --action-quote:         var(--green-500);
+  --action-quote-hover:   #84BB2B;
+
+  --fg:        #111827;
+  --fg-muted:  #4B5563;
+  --fg-subtle: var(--neutral-700);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -118,5 +170,9 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-poppins), system-ui, -apple-system, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
   }
 }

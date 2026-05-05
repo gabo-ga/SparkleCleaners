@@ -1,35 +1,50 @@
-
-import IMessageButton from "../iMessageButton";
-import WppButton from "../wppButton";
+import { Phone, Mail, MapPin } from 'lucide-react';
+import { ContactForm } from '../contactForm/form';
 
 export default function Contact() {
-  
     return (
-        <div className="flex flex-row w-full items-center md:justify-center gap-10 py-3">
-            <article>
-                <div className="flex flex-col items-center justify-center gap-6 px-9 py-5 max-w-md">
-                    <h2 className="text-black text-xl font-bold font-Poppins lg:text-2xl">
-                        Amazing benefits!
+        <section id="contact" className="py-20 lg:py-[90px] px-6 lg:px-12 scroll-mt-20 bg-white">
+            <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start">
+                <div>
+                    <h2 className="font-extrabold uppercase tracking-tight text-3xl lg:text-[40px] mb-3.5 leading-[1.15]">
+                        Send us a <span style={{ color: 'var(--green-500)' }}>message!</span>
                     </h2>
-                    <p className="text-justify items-center text-sm font-Poppins text-wrap md:text-md lg:text-xl">
-                        Choose us for exceptional cleaning tailored to New Yorkers. Our
-                        trained and professional team ensure a spotless, safe home. Enjoy
-                        flexible scheduling, customized plans, same-day cleaning and
-                        reliable services. Trust us to transform your space.
+                    <p className="text-base lg:text-[17px] leading-relaxed mb-7" style={{ color: 'var(--fg-muted)' }}>
+                        We would love to hear from you! Share a few details and our team will get back to you with a
+                        tailored quote.
                     </p>
-                    <div className="flex flex-row items-start gap-3 text-xl font-semibold text-[#aae858] font-Poppins lg:text-2xl">
-                        <h3>Send us a message!</h3>
-                        <WppButton/>
-                       <IMessageButton/>
+                    <div className="flex flex-col gap-3">
+                        <a
+                            href="tel:9293770976"
+                            className="flex items-center gap-3 text-[15px] text-gray-900 hover:opacity-80 transition-opacity"
+                        >
+                            <span style={{ color: 'var(--brand-blue)' }}>
+                                <Phone size={20} />
+                            </span>
+                            (929) 377-0976
+                        </a>
+                        <a
+                            href="mailto:hello@sparklecleanersnyc.com"
+                            className="flex items-center gap-3 text-[15px] text-gray-900 hover:opacity-80 transition-opacity"
+                        >
+                            <span style={{ color: 'var(--brand-blue)' }}>
+                                <Mail size={20} />
+                            </span>
+                            hello@sparklecleanersnyc.com
+                        </a>
+                        <div className="flex items-start gap-3 text-[15px] text-gray-900">
+                            <span className="mt-0.5" style={{ color: 'var(--brand-blue)' }}>
+                                <MapPin size={20} />
+                            </span>
+                            50-28 61st Street, Woodside, NY 11377
+                        </div>
                     </div>
                 </div>
-            </article>
-            <div 
-                className="hidden md:block h-72 w-64 bg-cover bg-no-repeat overflow-hidden rounded-lg shadow-lg"
-                style={{ backgroundImage: "url('/man.webp')" }}
-                role="img"
-                aria-label="Cleaning professional"
-            />
-        </div>
+
+                <div className="bg-white rounded-[20px] p-7" style={{ boxShadow: 'var(--shadow-sm)' }}>
+                    <ContactForm />
+                </div>
+            </div>
+        </section>
     );
 }
