@@ -45,4 +45,3 @@ export default function Reviews() {
         </section>
     );
 }
-

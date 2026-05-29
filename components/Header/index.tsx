@@ -1,6 +1,6 @@
 import Logo from './logo';
 import BookNowButton from '../booknowButton';
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "../../src/components/ui/sheet";
 import { Menu, Phone } from "lucide-react";
 import Link from 'next/link';
 
