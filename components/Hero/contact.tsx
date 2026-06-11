@@ -30,7 +30,7 @@ export default function Contact() {
                             <span style={{ color: 'var(--brand-blue)' }}>
                                 <Mail size={20} />
                             </span>
-                            hello@sparklecleanersnyc.com
+                            spark.cleanny@gmail.com
                         </a>
                         <div className="flex items-start gap-3 text-[15px] text-gray-900">
                             <span className="mt-0.5" style={{ color: 'var(--brand-blue)' }}>
